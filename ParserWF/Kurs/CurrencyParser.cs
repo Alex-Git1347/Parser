@@ -13,7 +13,7 @@ namespace ParserWF.Kurs
         {
             var list = new List<string>();
             var itemsTagA = document.QuerySelectorAll("a").Where(item => item.ClassName != null && item.ClassName.Contains("dotted"));
-            var itemsTagDiv = document.QuerySelectorAll("div").Where(item => item.ClassName != null && item.ClassName.Contains("course"));
+            var itemsTagDiv = document.QuerySelectorAll("div").Where(item => item.ClassName != null && item.ClassName.ToString()==("course"));
             //int i = itemsTagA.Count();
             int i = 0;
 
